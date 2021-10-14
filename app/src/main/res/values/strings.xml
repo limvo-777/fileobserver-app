@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">FileObserver</string>
+    <string name="observing_path">Observing Path</string>
 </resources>
