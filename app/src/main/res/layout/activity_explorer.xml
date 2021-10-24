@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent" >
+
+
+
+    <LinearLayout style="?android:buttonBarStyle"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+
+        >
+
+
+        <Button
+            android:id="@+id/btnroot"
+
+            style="?android:buttonBarButtonStyle"
+
+            android:layout_width="89dp"
+
+            android:layout_height="wrap_content"
+
+            android:onClick="mOnClick"
+
+            android:text="/ (root)" />
+
+
+        <Button
+            android:id="@+id/btnup"
+
+            style="?android:buttonBarButtonStyle"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:onClick="mOnClick"
+
+            android:text=".. (UP)" />
+
+
+
+        <Button style="?android:buttonBarButtonStyle"
+
+            android:id="@+id/current"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+
+        android:orientation="vertical"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+
+
+        <ListView
+            android:id="@+id/filelist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>

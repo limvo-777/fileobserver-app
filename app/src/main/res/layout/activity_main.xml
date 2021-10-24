@@ -6,75 +6,86 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ListView
-        android:id="@+id/listviewA"
-        android:layout_width="401dp"
-        android:layout_height="612dp"
-        android:background="#58F3C3"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:visibility="visible" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            tools:ignore="MissingConstraints">
 
-    <EditText
-        android:id="@+id/editTextPath"
-        android:layout_width="174dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="10dp"
-        android:ems="10"
-        android:hint="@string/observing_path"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <EditText
+                android:id="@+id/editTextPath"
+                android:layout_width="0dp"
+                android:layout_height="49dp"
+                android:layout_weight="5"
+                android:layout_gravity="center_vertical"
+                android:hint="@string/observing_path"
+                android:inputType="textPersonName"/>
+            <Button
+                android:id="@+id/btn_select"
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Choose" />
+            <!--            <View-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="0dp"-->
+            <!--                android:layout_weight="0.5" />-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="2"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="49dp"
+                    android:text="START" />
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="49dp"
+                    android:text="Clear" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="2"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+                <!--                    android:layout_marginEnd="9dp"-->
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="49dp"
+                    android:text="STOP" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="13dp"
-        android:layout_marginEnd="3dp"
-        android:text="START"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/editTextPath"
-        tools:layout_editor_absoluteY="11dp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="9dp"
-        android:text="STOP"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="11dp" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="1dp"
-        android:text="Clear"
-        app:layout_constraintEnd_toStartOf="@+id/button4"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="9dp"
-        android:text="UPDATE"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" /><![CDATA[
-
-
-
-    ”@+id/button” android:layout_height=”wrap_content” android:layout_width=”wrap_content” android:textSize=”20dp” android:text=”Insert” android:layout_gravity=”center”/>
-
-
-]]>
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="49dp"
+                    android:text="UPDATE" />
+                <![CDATA[”@+id/button”
+                    android:layout_height=”wrap_content”
+                    android:layout_width=”wrap_content”
+                    android:textSize=”20dp”
+                    android:text=”Insert”
+                    android:layout_gravity=”center”/>]]>
+            </LinearLayout>
+        </LinearLayout>
+        <ListView
+            android:id="@+id/listviewA"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:background="#C0C0C0"
+            android:visibility="visible"/>
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>

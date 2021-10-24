@@ -56,7 +56,7 @@ public class Splash extends AppCompatActivity {
             ActivityCompat.requestPermissions(Splash.this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE}, LOCATION_REQUESTCODE);
         } else {
 
-            startActivity(new Intent(Splash.this, MainActivity.class));
+            startActivity(new Intent(Splash.this, SelectActivity.class));
             overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
 
             finish();
