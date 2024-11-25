@@ -28,7 +28,11 @@ https://github.com/sadikuls/FileObserver 기반 개발 → 특정 디렉터리 �
 <br/><br/>
 ### 프로젝트 시연
 > 1) 사용자가 인지하지 못한 악성앱이 파일 생성 시 탐지
-
-> 2) 사용자가 인지하지 못한 악성앱이 카메라 접근 시 탐지
+<br/><br/>
+[![Video Label](http://img.youtube.com/vi/4JNEtwXX8mM/0.jpg)](https://youtu.be/4JNEtwXX8mM?t=0s)
+<br/><br/>
+> 3) 사용자가 인지하지 못한 악성앱이 카메라 접근 시 탐지
+<br/><br/>
+[![Video Label](http://img.youtube.com/vi/Tupw4Mod8yI/0.jpg)](https://youtu.be/Tupw4Mod8yI?t=0s)
 
 
